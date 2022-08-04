@@ -1,0 +1,134 @@
+
+  a{
+      list-style:none;
+  }
+
+  li{
+        list-style:none;
+  }
+    
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      font-family: 'Lato', sans-serif;
+      margin: 0px;
+      min-height: 100vh;
+      background: linear-gradient(-55deg, #957aa1,#be75a6, #bb8fac, #cc6a9b);
+      background-size: 400% 400%;
+      animation: gradient 6s ease infinite;
+      color:white;
+      overflow: hidden;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+  @keyframes float{
+    0%{
+      box-shadow: 0px 5px 15px 0px rgba(41, 41, 41, 0.8);
+      transform:translatey(0);
+    }
+  
+    50%{
+      box-shadow: 0px 25px 15px 0px rgba(32, 32, 32, 0.4);
+      transform:translatey(-20);
+    }
+  
+    100%{
+      box-shadow: 0px 5px 15px 0px rgba(53, 53, 53, 0.8);
+      transform:translatey(0);
+    }
+  }
+
+#melody{
+    border-radius: 50%;
+    width:400px;
+    box-shadow:0 4px 30px rgba(0,0,0,0.1);
+    animation:float 2s ease-in-out infinite;
+    backdrop-filter:blur(5px);
+}
+
+.container1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:3rem;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:2rem;
+}
+
+h2{
+    font-size:3rem;
+}
+
+
+.buttons {
+    position:relative;
+    top:-1rem;
+    width: 700px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+    
+.action_btn {
+    width: 350px;
+    margin: 5px;
+    padding:15px;
+    display: inline;
+    border-radius: 10px;
+    font-size:20px;
+    font-weight:600;
+    color:white;
+    border: none;
+}
+
+.action_btn:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.invite{
+    background:#7289da;
+    box-shadow: 0 5px 0 #51619b;
+}
+
+.contact{
+    background:#7b8088;
+    box-shadow: 0 5px 0 #5c6066;
+}
+
+
+.big_btn{
+    position:relative;
+    top:-1rem;
+    width: 690px;
+    padding:15px;
+    display: inline;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #c99129;
+    color:white;
+    font-size:20px;
+    font-weight:600;
+    background:#e2a32f;
+    border: none;
+}
+
+.big_btn:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
