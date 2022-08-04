@@ -1,0 +1,24 @@
+button{
+    animation:transitionIn 1s;
+}
+
+h1{
+    animation:transitionIn 1s;
+}
+
+h2{
+    animation:transitionIn 1s;
+}
+
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(10deg);
+    }
+
+    to{
+        opacity:1;
+        transform: rotateX(0deg);
+    }
+}
